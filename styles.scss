@@ -1,0 +1,108 @@
+/* Reset and Global Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  /* Remove the background image from body and set video properties */
+  body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    font-size: 16px;
+    position: relative;
+  }
+  
+  /* Video as background */
+  body video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+  }
+  
+  /* Card and Content Styling */
+  .Card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    max-width: 80%;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .cont {
+    width: 100%;
+  }
+  
+  .cont a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 15px;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+  }
+  .cont a:hover {
+    background-color: rgb(0, 0, 0,0.6);
+  }
+  
+  .cont p {
+    flex: 1;
+    text-align: left;
+    margin-left: 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 1.2em;
+  }
+  
+  img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+  
+  .head-img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+  }
+  
+  @media (max-width: 600px) {
+    .Card {
+      width: 95%;
+      padding: 20px;
+    }
+    img {
+      width: 60px;
+      height: 60px;
+    }
+    .head-img {
+      width: 80px;
+      height: 80px;
+    }
+    .cont p {
+      margin-left: 20px;
+      font-size: 1.1em;
+    }
+  }
+  
